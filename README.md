@@ -20,3 +20,8 @@
 
 ## route parameters -
 * ':' : specify route variable.
+
+
+## EJS -
+* <%  ... %>  : logic (will not apper in the HTML)
+* <%= ... %>  : will be rendered & added to the HTML.
