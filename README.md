@@ -11,9 +11,11 @@
 
 ## node.js commands -
 * node index.js : run the index.js file.
-* npm init
-* npm install 'packageName' --save
 * Ctrl + C : exit the node command line.
+
+#### NPM (Node Package Manager)
+* npm init
+* install package: npm install 'packageName' --save  [ use require() to include a package ]
 * 
 
 
