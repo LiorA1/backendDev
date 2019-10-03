@@ -62,3 +62,6 @@ app.get("/r/:subredditName/comments/:id/:title", function(req, res){ <br />
 ## EJS -
 * <%  ... %>  : logic (will not apper in the HTML)
 * <%= ... %>  : will be rendered & added to the HTML.
+
+## Reference:
+https://github.com/nax3t/webdevbootcamp
