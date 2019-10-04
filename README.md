@@ -1,8 +1,8 @@
-# backendDev
+# BackendDev
 
 **DRY:** *Don't repeat yourself*
 
-## basic commands -
+## Basic commands -
 * **cd** : open a  directory.
 * **ls** : lists all files and directories in the working directory.
 * **mkdir** : create a folder.
@@ -11,7 +11,7 @@
 * **rm -rf** : remove a directory.
 
 
-## node.js commands -
+## Node.js commands -
 * **node index.js** : run the index.js file.
 * **Ctrl + C** : exit the node command line.
 
@@ -20,7 +20,7 @@
 * **npm install 'packageName' --save:** install package  *[ use require() to include a package ]*
 * 
 
-## route examples -
+## Route examples -
 
 *//for get "/" ==> 'Hi' -*  <br />
 
@@ -55,13 +55,31 @@ app.get("/r/:subredditName/comments/:id/:title", function(req, res){ <br />
 });
 
 
-## route parameters -
+## Route parameters -
 * ':' : specify route variable.
 
 
 ## EJS -
 * <%  ... %>  : logic (will not apper in the HTML)
 * <%= ... %>  : will be rendered & added to the HTML.
+
+## MongoDB -
+
+### MongoDB installation - 
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
+
+### Mongo commands -
+* **./mongod :** start the mongo server.
+* **mongo :** open the mongo shell.
+* **help :** shows the basic features of mongo.
+* **show dbs :** shows data bases names.
+* **use [name]:** 
+* **db.dogs.insert({name: "Rusty", breed: "Mutt"}) :** 
+* **db.dogs.find({name: "Rusty"}) :** 
+* **db.dogs.update({name: "Rusty"}, {breed: "Poodle"}) :** override the old object.
+* **db.dogs.update({name: "Rusty"}, {$set: {breed: "Poodle"}}) :** not override the old object, just update the desired attribute.
+* **db.dogs.remove({name: "Rusty"}) :** remove all matching objects.
+
 
 ## Reference:
 https://github.com/nax3t/webdevbootcamp
