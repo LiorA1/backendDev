@@ -71,14 +71,33 @@ https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
 ### Mongo commands -
 * **./mongod :** start the mongo server.
 * **mongo :** open the mongo shell.
+
 * **help :** shows the basic features of mongo.
 * **show dbs :** shows data bases names.
 * **use [name]:** 
 * **db.dogs.insert({name: "Rusty", breed: "Mutt"}) :** 
-* **db.dogs.find({name: "Rusty"}) :** 
+* **db.dogs.find({name: "Rusty"}) :** find all the dogs with the name "Rusty".
 * **db.dogs.update({name: "Rusty"}, {breed: "Poodle"}) :** override the old object.
 * **db.dogs.update({name: "Rusty"}, {$set: {breed: "Poodle"}}) :** not override the old object, just update the desired attribute.
 * **db.dogs.remove({name: "Rusty"}) :** remove all matching objects.
+
+# Mongoose -
+ODM : JS layer on top of MongoDB.
+
+var mongoose = require("mongoose");
+mongoose.set('useNewUrlParser', true);
+mongoose.set('useUnifiedTopology', true);
+
+mongoose.connect("mongodb://localhost/cat_app");
+
+var catSchema = new mongoose.Schema({
+	name: String,
+	age: Number
+});
+
+var Cat = mongoose.model("Cat", catSchema);
+
+
 
 
 ## Reference:
